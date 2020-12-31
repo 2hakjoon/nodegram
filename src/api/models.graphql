@@ -57,8 +57,6 @@ type Room{
   id: ID!
   participants: [User!]!
   messages: [Message!]!
-  createdAt: String
-  updatedAt: String
 }
 
 type Message{
