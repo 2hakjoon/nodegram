@@ -8,7 +8,8 @@ export default{
                 userName,
                 firstName,
                 lastName,
-                bio
+                bio,
+                avatar,
             } = args;
             const {user} = request;
             return prisma.updateUser({
@@ -17,7 +18,9 @@ export default{
                     userName,
                     firstName,
                     lastName,
-                    bio}
+                    bio,
+                    avatar
+                }
             })
         }
     }
